@@ -1,0 +1,22 @@
+<ion-view view-title="Account">
+  <ion-content>
+    <ion-list>
+    <ion-toggle  ng-model="settings.enableFriends">
+        Enable Friends
+    </ion-toggle>
+    </ion-list>
+
+    <button class="button" ng-click="savePerson('Nic', 'Raboy')">Save Nic Raboy</button>
+
+    <button class="button" ng-click="savePerson('Maria', 'Campos')">Save Maria Campos</button>
+
+    <button class="button" ng-click="savePerson('Bruce', 'Raboy')">Save Bruce Raboy</button>
+
+    <button class="button" ng-click="getPeople()">Print All People</button>
+
+    <button class="button" ng-click="getPeople({lastname: 'Raboy'})">Print All Raboys</button>
+
+
+  </ion-content>
+
+</ion-view>
